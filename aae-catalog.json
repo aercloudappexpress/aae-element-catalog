@@ -15,7 +15,7 @@
       "tagline":"IoTon core elements"
     },
     {
-      "name":"google-web-components",
+      "name":"aae-elements",
       "title":"Fleet Components",
       "color":"#64B5F6",
       "symbol":"Fl",
@@ -27,13 +27,6 @@
       "title":"Asset Tracking Components",
       "symbol": "At",
       "tagline":"Components for Asset Tracking apps"
-    },
-    {
-      "name":"aae-elements",
-      "color":"#ffb74d",
-      "title":"App Express",
-      "symbol": "Ae",
-      "tagline":"Components for App Express"
     }
   ]
 }
