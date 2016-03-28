@@ -1,6 +1,6 @@
 ---
 title: Using Elements
-summary: "Learn how to install and use Polymer Elements in your own projects."
+summary: "Learn how to install and use IoTon elements in your own projects."
 tags: ['beginner']
 elements: ['paper-checkbox']
 updated: 2015-05-03
@@ -9,7 +9,7 @@ updated: 2015-05-03
 
 ## Introduction
 
-The Polymer element sets provide elements that you can use in your web pages 
+The Polymer element sets provide elements that you can use in your web pages
 and apps. These elements are built with the [Polymer library](https://www.polymer-project.org).
 
 **You don't need to use Polymer directly** to use these elements.
@@ -33,31 +33,31 @@ Polymer contains a few primary collections of elements:
 
 -   [Neon elements](/browse?package=neon-elements). Animation-related elements.
 
--   [Platinum elements](/browse?package=platinum-elements). Elements for app-like features, 
+-   [Platinum elements](/browse?package=platinum-elements). Elements for app-like features,
     like push notifications, offline caching and bluetooth.
 
 
-If you find a component you want while browsing the docs, simply click the 
-star <iron-icon class="inline-icon" icon="star-border"></iron-icon> to add it to 
+If you find a component you want while browsing the docs, simply click the
+star <iron-icon class="inline-icon" icon="star-border"></iron-icon> to add it to
 your collection.
 
 When you've selected some components, you can download either a `bower.json` file or a ZIP file.
 
 *   `bower.json` file. Just the metadata you need to install the components using
     Bower.
-    
+
     Bower is the recommended way to manage components. Bower also handles installing
-    the components' dependencies and updating installed components. For more information, 
+    the components' dependencies and updating installed components. For more information,
     see [Installing with Bower](#installing-with-bower).
 
-*   ZIP file. A single file containing your selected components and all their dependencies, 
-    so you can unzip and start using them immediately. The ZIP file requires no extra tools, 
+*   ZIP file. A single file containing your selected components and all their dependencies,
+    so you can unzip and start using them immediately. The ZIP file requires no extra tools,
     but doesn't provide a built-in method for updating dependencies. For more information, see
     [Installing from ZIP files](#installing-from-zip-files).
 
 To download the components in your collection:
 
-1.  Click <iron-icon class="inline-icon" icon="stars"></iron-icon> and 
+1.  Click <iron-icon class="inline-icon" icon="stars"></iron-icon> and
     select the **Download** tab.
 
 2.  Choose a download format and click **Download**.
@@ -80,13 +80,13 @@ installed as well.
 
 #### Project setup
 
-If you haven't created a `bower.json` file for your application, 
+If you haven't created a `bower.json` file for your application,
 download the `bower.json` from the catalog and edit it to add your
 own project name and version.
 
-If you already have a `bower.json` file, merge the 
+If you already have a `bower.json` file, merge the
 `dependencies` section of the downloaded file into your existing
-`bower.json` file. 
+`bower.json` file.
 
 The resulting file should look something like this:
 
@@ -162,17 +162,17 @@ dependencies in it:
 
     bower init
 
-This generates a basic `bower.json` file. 
+This generates a basic `bower.json` file.
 
 Enter **Y** when prompted to set currently installed components as dependencies.
 
-Some of the questions, like "What kind of modules do you expose," can be skipped 
+Some of the questions, like "What kind of modules do you expose," can be skipped
 by pressing Enter.
 
 
 ## Using elements
 
-To use elements, first load the web components polyfill library, `webcomponents-lite.min.js`. 
+To use elements, first load the web components polyfill library, `webcomponents-lite.min.js`.
 Many browsers have yet toimplement the various web components APIs. Until they do, `webcomponents-lite`
 provides [polyfill support](http://webcomponents.org/polyfills/). **Be sure to include
 this file before any code that touches the DOM.**
@@ -201,8 +201,8 @@ An example `index.html` file:
         <div id="greeting"></div>
 
         <script>
-          // To ensure that elements are ready on polyfilled browsers, 
-          // wait for WebComponentsReady. 
+          // To ensure that elements are ready on polyfilled browsers,
+          // wait for WebComponentsReady.
           document.addEventListener('WebComponentsReady', function() {
             var input = document.querySelector('paper-input');
             var button = document.querySelector('paper-button');
@@ -221,7 +221,7 @@ polyfill to work properly. This requirement goes away when the API is available 
 </aside>
 
 
-If you aren't using the polyfill, you can't rely on the `WebComponentsReady` event. Instead, 
+If you aren't using the polyfill, you can't rely on the `WebComponentsReady` event. Instead,
 simply place script at the end of the file (after any custom elements).
 
 ## Polymer element APIs
@@ -240,8 +240,8 @@ When mapping attribute names to property names:
 *   Attribute names are converted to lowercase property names. For example,
     the _attribute_ `firstName` maps to the property `firstname`.
 
-*   Attribute names with _dashes_ are converted to _camelCase_ property names 
-    by capitalizing the character following each dash, then removing the dashes. 
+*   Attribute names with _dashes_ are converted to _camelCase_ property names
+    by capitalizing the character following each dash, then removing the dashes.
     For example, the _attribute_ `first-name` maps to the property `firstName`.
 
 ####  Passing object and array values in attributes
@@ -272,9 +272,9 @@ For more information see [Data binding](https://www.polymer-project.org/1.0/docs
 ### DOM manipulation
 
 Because not all browsers support shadow DOM natively, Polymer uses a shim called shady DOM
-to achieve shadow DOM's goals of composition and style encapsulation. 
+to achieve shadow DOM's goals of composition and style encapsulation.
 
-As a result, if you are manipulating a Polymer element, you need to use the `Polymer.dom` 
+As a result, if you are manipulating a Polymer element, you need to use the `Polymer.dom`
 APIs to maintain the correct DOM structure. This is particularly important when adding or removing
 children from a Polymer element, for example.
 
@@ -282,7 +282,7 @@ For more information, see [DOM API](https://www.polymer-project.org/1.0/docs/dev
 
 ### Custom CSS properties and mixins
 
-Many of the Polymer elements can be styled using custom CSS properties and mixins. 
+Many of the Polymer elements can be styled using custom CSS properties and mixins.
 
 Property and mixin values can be specified:
 
@@ -292,7 +292,7 @@ Property and mixin values can be specified:
 For more information, see [Cross-scope styling](https://www.polymer-project.org/1.0/docs/devguide/styling.html#xscope-styling)
 and [Custom element for document styling (custom-style)](https://www.polymer-project.org/1.0/docs/devguide/styling.html#custom-style).
 
-<!-- 
+<!--
 ## Next steps
 
 Now that you've got the basic idea of using and installing elements, it's time to start
@@ -314,4 +314,3 @@ If you'd rather browse the existing elements, check out the
 <a href="../elements/core-elements.html">Polymer Core elements</a>
 and <a href="../elements/paper-elements.html">Paper elements</a> catalogs.
 -->
-

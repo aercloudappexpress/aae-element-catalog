@@ -28,6 +28,7 @@
     "app-layout": "PolymerLabs/app-layout#master",
     "pushstate-anchor": "~0.3.0",
     "color": "~2.5.0",
-    "hydrolysis": "PolymerLabs/hydrolysis#^1.11.0"
+    "hydrolysis": "PolymerLabs/hydrolysis#^1.11.0",
+    "aae-elements": "aercloudappexpress/aae-elements"
   }
 }

@@ -1,6 +1,6 @@
 ---
-title: Flexbox layout with iron-flex-layout
-summary: "Simple flexbox layout"
+title: Fleet tracking
+summary: "Simple fleet app with live tracking"
 tags: ['beginner']
 elements: ['iron-flex-layout']
 updated: 2015-05-03

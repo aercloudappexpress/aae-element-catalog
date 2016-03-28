@@ -1,0 +1,39 @@
+{
+  "packages": [
+    {
+      "name":"iron-elements",
+      "title":"Base Elements",
+      "color":"#81c784",
+      "symbol": "Fe",
+      "tagline":"IoTon base elements"
+    },
+    {
+      "name":"paper-elements",
+      "title":"Core Elements",
+      "color":"#cfd8dc",
+      "symbol": "Co",
+      "tagline":"IoTon core elements"
+    },
+    {
+      "name":"google-web-components",
+      "title":"Fleet Components",
+      "color":"#64B5F6",
+      "symbol":"Fl",
+      "tagline":"Components for Fleet apps"
+    },
+    {
+      "name":"gold-elements",
+      "color":"#ffb74d",
+      "title":"Asset Tracking Components",
+      "symbol": "At",
+      "tagline":"Components for Asset Tracking apps"
+    },
+    {
+      "name":"aae-elements",
+      "color":"#ffb74d",
+      "title":"App Express",
+      "symbol": "Ae",
+      "tagline":"Components for App Express"
+    }
+  ]
+}
